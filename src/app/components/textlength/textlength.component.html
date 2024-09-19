@@ -1,0 +1,7 @@
+<br>
+<br>
+<input type="text" id="inputString" [(ngModel)]="inputText" placeholder="input a text">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="textLength !== null">{{ textLength }}</p>
+

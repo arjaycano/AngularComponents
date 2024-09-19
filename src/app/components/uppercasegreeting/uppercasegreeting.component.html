@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="text" id="name" [(ngModel)]="name" placeholder="input your name">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="uppercasedName">{{ uppercasedName }}</p>

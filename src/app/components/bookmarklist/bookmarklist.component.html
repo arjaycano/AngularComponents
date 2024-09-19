@@ -1,0 +1,10 @@
+<br>
+<br>
+<input type="text" id="url" [(ngModel)]="url" placeholder="input an URLs">
+<button (click)="show()">Enter</button>
+
+<ul>
+  <li *ngFor="let link of urlList">
+    <a [href]="link" target="_blank">{{ link }}</a>
+  </li>
+</ul>

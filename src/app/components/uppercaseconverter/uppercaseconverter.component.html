@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="text" id="text" [(ngModel)]="inputText" placeholder="input a text">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="convertedText">{{ convertedText }}</p>

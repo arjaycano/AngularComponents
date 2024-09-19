@@ -1,0 +1,15 @@
+<br>
+<br>
+<div>
+  <label for="temperature">Enter Temperature: </label>
+  <input type="number" id="temperature" [(ngModel)]="temperature">
+</div>
+<div>
+  <select id="temperatureType" [(ngModel)]="temperatureType">
+    <option value="CtoF">Celsius to Fahrenheit</option>
+    <option value="FtoC">Fahrenheit to Celsius</option>
+  </select>
+</div>
+<button (click)="show()">Enter</button>
+
+<p *ngIf="convertedTemperature !== null">{{ convertedTemperature.toFixed(2) }}</p>

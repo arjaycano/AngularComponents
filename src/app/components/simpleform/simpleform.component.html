@@ -1,0 +1,17 @@
+<br>
+<br>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name: </label>
+    <input type="text" id="name" [(ngModel)]="name" name="name">
+  </div>
+  <div>
+    <label for="age">Age: </label>
+    <input type="number" id="age" [(ngModel)]="age" name="age">
+  </div>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+<p *ngIf="inputData">{{ inputData.name }}</p>
+<p *ngIf="inputData">{{ inputData.age }}</p>

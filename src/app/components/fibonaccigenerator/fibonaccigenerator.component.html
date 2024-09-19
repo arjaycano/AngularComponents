@@ -1,0 +1,10 @@
+<br>
+<br>
+<input type="number" id="n" [(ngModel)]="n" min="1" placeholder="input fibonacci numbers">
+<button (click)="show()">Enter</button>
+
+<div *ngIf="fibonacciSequence.length > 0">
+  <ul>
+    <li *ngFor="let num of fibonacciSequence">{{ num }}</li>
+  </ul>
+</div>

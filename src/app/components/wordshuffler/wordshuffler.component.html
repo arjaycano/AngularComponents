@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="text" id="word" [(ngModel)]="inputWord" placeholder="input a word">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="shuffledWord">{{ shuffledWord }}</p>

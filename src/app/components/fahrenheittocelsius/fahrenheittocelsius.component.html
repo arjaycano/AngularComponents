@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="number" id="fahrenheit" [(ngModel)]="fahrenheit" placeholder="input a fahrenheit">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="celsius !== null">{{ fahrenheit }}°F = {{ celsius | number:'1.2-2' }}°C</p>

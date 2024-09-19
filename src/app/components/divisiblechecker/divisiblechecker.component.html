@@ -1,0 +1,8 @@
+<br>
+<br>
+<input type="number" id="number1" [(ngModel)]="num1" placeholder="input first number">
+<input type="number" id="number2" [(ngModel)]="num2" placeholder="input second number">
+
+<button (click)="show()">Enter</button>
+
+<p *ngIf="result">{{ result }}</p>

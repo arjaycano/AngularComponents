@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="text" id="inputString" [(ngModel)]="inputString" placeholder="input a string">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="inputString.length > 0">{{ characterCount }}</p>

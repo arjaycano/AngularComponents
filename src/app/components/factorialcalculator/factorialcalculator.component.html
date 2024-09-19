@@ -1,0 +1,7 @@
+<br>
+<br>
+<label for="number">Enter a number: </label>
+<input type="number" id="number" [(ngModel)]="number">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="factorial !== null">{{ factorial }}</p>

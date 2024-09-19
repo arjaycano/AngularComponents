@@ -1,0 +1,7 @@
+<br>
+<br>
+<input type="number" id="height" [(ngModel)]="height" step="0.01" placeholder="input your height">
+<input type="number" id="weight" [(ngModel)]="weight" step="0.1" placeholder="input your weight">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="bmi !== null">{{ bmi.toFixed(2) }}</p>

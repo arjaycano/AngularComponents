@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="text" [(ngModel)]="userGuess" placeholder="Enter your guess" />
+<button (click)="show()">Enter</button>
+
+<p *ngIf="feedback">{{ feedback }}</p>

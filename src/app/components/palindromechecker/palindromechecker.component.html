@@ -1,0 +1,9 @@
+<br>
+<br>
+<input type="text" id="word" [(ngModel)]="word" placeholder="input a word">
+<button (click)="show()">Enter</button>
+
+<div *ngIf="isPalindrome !== null">
+  <p *ngIf="isPalindrome">Palindrome</p>
+  <p *ngIf="!isPalindrome">Not Palindrome</p>
+</div>

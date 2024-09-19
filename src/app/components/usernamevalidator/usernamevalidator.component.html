@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="text" id="username" [(ngModel)]="username" placeholder="input your username">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="validationMessage">{{ validationMessage }}</p>

@@ -1,0 +1,14 @@
+<br>
+<br>
+<input type="number" [(ngModel)]="number">
+<button (click)="show()">Enter</button>
+
+<table>
+  <tbody>
+  <tr NBSP
+      *ngFor="let row of multiplicationTable">
+    <td>{{ row[0] }}</td>
+    <td *ngFor="let product of row | slice:1">{{ product }}</td>
+  </tr>
+  </tbody>
+</table>

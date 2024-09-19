@@ -1,0 +1,9 @@
+<br>
+<br>
+<input type="number" id="principal" [(ngModel)]="principal" step="0.01" placeholder="input principal amount">
+<input type="number" id="rate" [(ngModel)]="rate" step="0.01" placeholder="input interest rate">
+<input type="number" id="time" [(ngModel)]="time" step="0.01" placeholder="input time period">
+<input type="number" id="frequency" [(ngModel)]="frequency" placeholder="input compounded per year">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="compoundInterest !== null">Compound Interest: {{ compoundInterest.toFixed(2) }}</p>

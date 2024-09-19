@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="text" id="inputWord" [(ngModel)]="inputWord" placeholder="input a word">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="reversedWord">{{ reversedWord }}</p>

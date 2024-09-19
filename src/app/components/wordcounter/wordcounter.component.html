@@ -1,0 +1,7 @@
+<br>
+<br>
+<textarea id="text" [(ngModel)]="inputText" placeholder="input a text"></textarea>
+<br>
+<button (click)="show()">Enter</button>
+
+<p *ngIf="wordCount !== undefined">{{ wordCount }}</p>

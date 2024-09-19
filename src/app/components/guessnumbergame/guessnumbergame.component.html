@@ -1,0 +1,7 @@
+<br>
+<br>
+<label for="guess">Enter your guess: </label>
+<input type="number" id="guess" [(ngModel)]="userGuess" min="1" max="20">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="feedback">{{ feedback }}</p>

@@ -1,0 +1,6 @@
+<br>
+<br>
+<input type="number" id="currency" [(ngModel)]="dollarCurrency" placeholder="input a currency">
+<button (click)="show()">Enter</button>
+
+<p *ngIf="phpCurrency !== null">{{ phpCurrency | number:'1.2-2' }} Php</p>
